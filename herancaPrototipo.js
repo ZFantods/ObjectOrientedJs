@@ -15,10 +15,10 @@ const user = {
      nascimento: '2025-13-01',
      role: 'admin',
      ativo: true,
-     exibirInfos: function() {
+     criarCurso: function() {
        console.log('curso criado');
      },
-   }
+   };
 
    Object.setPrototypeOf(admin, user);
    admin.criarcurso();
