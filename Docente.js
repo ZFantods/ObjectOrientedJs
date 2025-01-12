@@ -1,6 +1,6 @@
 import User from './User.js';
 
-class Docente extends User {
+export default class Docente extends User {
     constructor(nome, email, nascimento, role = 'docente', ativo = 'true') { // Metodos próprios e construtores não são obrigatórios
         super(nome, email, nascimento, role, ativo);
     }
@@ -11,5 +11,5 @@ class Docente extends User {
     }
 }
 
-const novoDocente = new Docente('Ana', 'a@gmail.com', '2025-13-01'); //   toda classe em JavaScript segue implicitamente o que chamamos de modo estrito
-console.log(novoDocente.aprovarEstudante('Lucas', 'Javascript'));
+// const novoDocente = new Docente('Ana', 'a@gmail.com', '2025-13-01'); //   toda classe em JavaScript segue implicitamente o que chamamos de modo estrito
+// console.log(novoDocente.aprovarEstudante('Lucas', 'Javascript'));
