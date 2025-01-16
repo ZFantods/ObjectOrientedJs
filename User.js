@@ -36,8 +36,19 @@ export default class User {
     }
 
 
+        // exibirInfos() {
+        //     return `${this.nome}, ${this.email}, ${this.nascimento}, ${this.role}, ${this.ativo}`;
+        // }
         exibirInfos() {
-            return `${this.nome}, ${this.email}, ${this.nascimento}, ${this.role}, ${this.ativo}`;
+           if (this.role === 'estudante') {
+             return `dados estudantes:${this.nome}`;
+             } 
+             if (this.role === 'admin') {
+                return `dados admins:${this.nome}, ${this.role}`;
+            }
+            if (this.role === 'docente') {
+                return `dados docentes:${this.nome}, ${this.email}`;
+            }
         }
     }
 
